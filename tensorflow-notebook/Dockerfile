@@ -29,3 +29,5 @@ RUN conda install --quiet --yes \
     fix-permissions $CONDA_DIR
 #RUN pip install gym
 #RUN apt-get install python-opengl
+
+COPY jupyter_notebook_config.json /home/$NB_USER/.jupyter/
